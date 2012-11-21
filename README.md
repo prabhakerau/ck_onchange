@@ -1,6 +1,6 @@
 CKEditor Plugin onchange
 =============
-Plugin create event onchange
+Plugin create event change
 ------------
 Create folder `ckeditor/plugins/onchange` and unpack archive to 
 
@@ -10,6 +10,10 @@ File `ckeditor/config.js`
 		config.extraPlugins = 'onchange'; // add plugin
 	};
 	
+Use
+------------
+
+	editor.on( 'change', function(){ alert('Document chached!!!'); });
 	
 1. Author:Alfonso Martínez
 2. Used: [ck_stat][used1] and [ck_backup][used2]
